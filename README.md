@@ -1,7 +1,5 @@
 #Intro
 
-This is in testing. While it works, actual production use is ill advised.
-
 This is for mass updating a list of miners (urls, worker names, passwords) based on an ip list.
 
 #Dependencies:
