@@ -11,6 +11,6 @@ How to use:
 
 Due to naming conflicts with other Ubuntu packages you have to use "parallel-ssh" instead of "pssh"
 
-parallel-ssh -h ./dgrL3test.txt -l root -A -P -I < ./dgrL3testCommands.txt 
+parallel-ssh -h ./<nameofiplist>.<fileextension> -l root -A -P -I < ./<nameofcommandfile>.<fileextension> 
 
 To do:  
