@@ -14,3 +14,4 @@ Due to naming conflicts with other Ubuntu packages you have to use "parallel-ssh
 parallel-ssh -h ./<nameofiplist>.<fileextension> -l root -A -P -I < ./<nameofcommandfile>.<fileextension> 
 
 To do:  
+
