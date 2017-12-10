@@ -1,0 +1,24 @@
+pssh -h dgrL3test.txt -l root -A “cd /config; sed -i -e ‘s/3FGWDqQ9eYRWTz4e4Ek1FJsmY4qNUwLzcz/omtest/g’ cgminer.conf; sed -i -e ‘s/x11.eu.nicehash.com:3336/prohashing:3333/g’ cgminer.conf; reboot”
+
+pssh (parallel ssh):
+-h hosts file
+-l user
+-A ask for password and pass it to SSH
+
+sed (steam editor):
+-i files to be edited "in-place"
+-e is not necessary, stands for "expression" or script ... add the script to the commands to be executedS
+
+pssh -h dgrL3test.txt -l root -A “cd /config"; sed -i ‘s/3FGWDqQ9eYRWTz4e4Ek1FJsmY4qNUwLzcz/omtest/g’ cgminer.conf; sed -i ‘s/x11.eu.nicehash.com:3336/prohashing:3333/g’ cgminer.conf; "reboot”
+
+Looked at regex for 2 hours, fuck that
+
+pssh -h dgrL3test.txt -l root -A “cd /config" 
+
+command renamed to parallel-ssh on ubuntu .. extremely annoying. could add an alias command to make this convenient
+
+parallel-ssh -h ./dgrL3test.txt -P -I < ./dgrL3testCommands.txt 
+failed
+
+parallel-ssh -h ./dgrL3test.txt -l root -A -P -I < ./dgrL3testCommands.txt 
+
